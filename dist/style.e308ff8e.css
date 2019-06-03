@@ -1,0 +1,357 @@
+/*Estilos generales aplicables a todo la web*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font: 16px/1.6 'Lato', sans-serif;
+    color: #000;
+}
+.fuente {
+    position:absolute;
+    height:1px;    
+    width:1px;    
+    overflow:hidden;
+}
+p {
+    margin-bottom: 1rem;
+    font-size:0.8rem;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 0, 0, 0.8);
+}
+abbr {
+    text-decoration: none;
+}
+ul.lista {
+    list-style: none;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+main {
+    width: 100%;
+    padding: 50px 0;
+}
+header {
+    width: 100%;
+    background-color: #D2D2D3;
+    padding-bottom: 15px;
+}
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;    
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.bottom{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+/*Menú de navegación general*/
+nav, .top {
+    text-align: center;
+    font-weight: 600;
+}
+nav ul {
+    list-style: none;
+    font-size: 1rem;
+}
+div.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 30px 0;
+}
+div.top ul {
+    list-style: none;
+
+}
+div.top ul li {
+    display: inline-block;
+    font-size: 0.8rem;
+    
+}
+div.top ul li::before {
+    content: " | "; 
+}
+div.top ul li:first-child::before {
+    content: ""; 
+}
+nav ul li a:hover, div.top li a:hover {
+    color: rgba(0, 0, 0, 0.8)
+}
+a.actual {
+    border-bottom: 2px solid #000;
+}
+@media (min-width: 768px) {
+    nav ul li {
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        
+    }
+    nav ul li:first-child {
+        padding-left: 0;
+        
+    }
+    nav ul li:last-child {
+        padding-right: 0;
+    } 
+}
+/*Título del header de index.html*/
+.titulo h1{
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    max-width: 100%;
+}
+.titulo h1 a:hover {
+    color: #000;
+}
+.titulo h2{
+    text-align: center;
+    margin: 0px;
+    max-width: 100%;
+    font-style: italic;
+}
+/*Logo de la web*/
+#logo{
+    display: block;
+    margin: auto; 
+    margin-bottom: 30px;
+}
+#logo-pie{
+    -webkit-clip-path: circle(25% at 0 50%);
+            clip-path: circle(25% at 0 50%);
+    background-color: #ffff;
+    border-radius: 5px;
+} 
+#logo-pie:hover{
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+    border-radius: 5px;
+}
+
+/*Imagen de portada index.html*/
+.imginicio {
+    display: block;
+    margin: auto;
+    border-style: double;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+/*Párrafos index.html*/
+.definición {
+    padding: 0 10%;
+    text-align: justify;
+}
+/*Footer general*/
+.titulopie {
+    font-size: 2rem;
+}
+footer ul li {
+    display: inline-block;
+    padding-left: 15px;
+}
+footer ul li:first-child {
+    padding-left: 0;
+}
+footer ul li:last-child {
+    padding-right: 0;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    color: rgba(122, 15, 15, 0.7);
+}
+footer form {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+footer form input[type="email"] {
+    display: blocK;
+    width: 100%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    font-size: 1rem;
+}
+footer form div.email {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+footer form div.email span {
+    position:absolute;
+    right: 0;
+    bottom: 15px;
+}
+footer form input:focus {
+    outline: none;
+}
+footer form div.checkbox {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer .boton{
+    border-radius: 3px;
+    padding: 2px;
+}
+footer .boton:hover {
+    cursor: pointer;
+}
+footer .credito {
+    margin: 30px 0px;
+}
+footer .credito p {
+    font-size: 0.7rem;
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 768px) {
+    footer form input[type="email"] {
+        font-size: 1.6rem;
+    }
+    footer form div.email, footer form div.checkbox  {
+        width: 50%;
+    }
+}
+
+/*listado en categorias preprocesadores.html*/
+main .prepro, main .lang{     
+    text-align: center;  
+}
+main .prepro ul, main .lang ul{
+    list-style: none;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
+@media (min-width: 768px){
+    .contenedor{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .contenedor-leng{
+        display: block;
+        flex-direction: row;        
+    }
+    main .prepro, .main .lang{
+        padding: 0 30px;
+    }
+    main .prepro:first-child, main .lang:first-child {
+        padding-left: 0;
+    }
+    main .prepro:last-child, main .lang:last-child {
+        padding-right: 0;
+    }
+}
+/*sass.html*/
+main .sass{
+    padding: 0 10%;
+    text-align: justify;
+}
+.fuenteinfo{
+    font-size: 0.7rem;
+}
+.video {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+figcaption {
+    font-size: 0.7rem;
+    text-align: center; 
+}
+main .sass p{
+    padding-left: 20px;
+}
+
+/*estilo para las imagenes de categorias y paginas de detalle y destacado*/
+#img-lenguaje{
+    -webkit-clip-path: circle(30% at 50% 50%);
+            clip-path: circle(30% at 50% 50%);
+}
+.img-categoria{
+    display: block;
+    text-align: center;
+}
+.img-destacado{
+    text-align: center;
+}
+picture img{
+    border-style: double; 
+    width: 40%;
+}
+#gif{
+    width: 30%;
+    float: left;
+    padding: 0px 20px;
+}
+.clip-animado{    
+    width: -webkit-min-content;    
+    width: -moz-min-content;    
+    width: min-content;
+    margin-left: auto;
+}
+.clip-animado img{
+    width: 150px;
+    -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+            clip-path: ellipse(50% 50% at 50% 50%);
+    -webkit-animation: clip 1s infinite;
+            animation: clip 1s infinite;
+}
+@-webkit-keyframes clip{
+    0%{
+        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+                clip-path: ellipse(50% 50% at 50% 50%);
+    }
+    50%{
+        -webkit-clip-path: ellipse(40% 40% at 50% 50%);
+                clip-path: ellipse(40% 40% at 50% 50%);
+    }
+}
+@keyframes clip{
+    0%{
+        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+                clip-path: ellipse(50% 50% at 50% 50%);
+    }
+    50%{
+        -webkit-clip-path: ellipse(40% 40% at 50% 50%);
+                clip-path: ellipse(40% 40% at 50% 50%);
+    }
+}
+@media (min-width: 768px){
+    .clip-animado img{
+        width: 250px;
+    }
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Enciclopedia de conceptos del desarrollo front-end</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  </head>
+
+  <body>
+    <script src="./index.js"></script>
+    <a class="fuente" href="#main">Saltar al contenido principal</a>
+    <header>
+      <div class="top">
+          <ul>
+            <li><a href="">CA</a></li>
+            <li><a href="" class="actual">ES</a></li>
+            <li><a href="">EN</a></li>
+          </ul>
+          <a id="reloj">Clicka sobre mi para saber la hora</a> 
+      </div>
+      <div class="titulo">
+        <h1 title="Enciclopedia Front-end"><a href="index.html">Enciclopedia Front-end</a></h1>
+        <h2>Aurea Montes</h2>
+        <a href="index.html"><img id="logo" src="original/efrontend.png" srcset="img/efrontend-header-desktop.png 355w, img/efrontend-header-mobile.png 217w" sizes="(min-width: 768px) 355px, (max-width: 768px) 217px " alt="Logo de la web Enciclopedia Front-End" ></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="lenguajes.html">Lenguajes del Front-end</a></li>
+          <li><a href="preprocesadores.html">Preprocesadores</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div class="contenedor-leng">        
+            <div class="lang">
+                <h2>Lenguajes más utilizados en <span lang="en">Front-end</h2>            
+                <ul class="listlang">
+                    <li><a href="css.html" lang="en">CSS</a></li>
+                    <li><a href="html.html" lang="en">HTML</a></li>                
+                    <li><a href="javascript.html" lang="en">JavaScript</a></li>
+                </ul>            
+            </div>
+            <br>
+            <div class="img-categoria">
+            <a href="css.html"><img id="img-lenguaje" src="/original/css.svg" srcset="img/css-desktop.svg 250w, img/css-mobile.svg 150w" sizes="(min-width: 768px) 355px, (max-width: 768px) 217px" alt="Logo CSS"></a>           
+            <a href="html.html"><img id="img-lenguaje" src="/original/html.svg" srcset="img/html-desktop.svg 250w, img/html-mobile.svg 150w" sizes="(min-width: 768px) 355px, (max-width: 768px) 217px" alt="Logo HTML"></a>           
+            <a href="javascript.html"><img id="img-lenguaje" src="/original/javascript.svg" srcset="img/javascript-desktop.svg 250w, img/javascript-mobile.svg 150w" sizes="(min-width: 768px) 355px, (max-width: 768px) 217px" alt="Logo JavaScript"></a>           
+            </div>
+        </div>
+ 
+    </main>
+
+    <footer>
+      <div class="bottom">
+        <p class="titulopie">Enciclopedia Front-end</p>
+        <a href="index.html"><img id="logo-pie" src="original/efrontend.svg" srcset="img/efrontend-header-desktop.svg 355w, img/efrontend-header-mobile.svg 217w" sizes="(min-width: 768px) 355px, (max-width: 768px) 217px " alt="Logo de la web Enciclopedia Front-End" ></a>
+        <br>Tel. 93 555 55 55<br><a href="mailto:info.frontend.net">info@frontend.org</a>
+            <ul class="lista">
+                <li><a href=""><span class="fab fa-twitter"></span></a></li>
+                <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href=""><span class="fab fa-instagram"></span></a></li>
+                <li><a href=""><span class="fab fa-youtube"></span></a></li>
+            </ul>
+            <form name="newsletter" action="#" method="POST">
+                <div class="email">
+                    <label>
+                        <input type="email" value="" name="email" placeholder="Suscríbete a nuestra Newsletter" required />
+                        <span class="far fa-envelope"></span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" value="Acepta" name="politica" id="politica" required />
+                    <label for="politica">Acepto expresamente la <a href="">política de protección de datos</a></label>
+                </div>
+                <div>
+                    <input type="submit" class="boton" value="Suscríbeme" />
+                </div>
+            </form>
+
+            <ul class="lista">
+                <li><a href="">Quiénes somos</a></li>
+                <li><a href="">Política de privacidad</a></li>
+                <li><a href="">Aviso legal</a></li>
+                <li><a href="" lang="en">Cookies</a></li>
+            </ul>
+            <div class="credito">
+                <p>&copy; E.FRONTEND. Definiciones e información de dominio público. </p>
+                <p>Actividad realizada por Aurea Montes, para la asignatura Herramientas <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y <abbr title="Cascading Style Sheets" lang="en">CSS</abbr>. Segundo semestre del curso 2018-2019</p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
